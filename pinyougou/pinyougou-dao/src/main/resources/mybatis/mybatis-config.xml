@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--settings:控制mybatis全局行为-->
+    <!--<settings>
+        &lt;!&ndash;设置mybatis输出日志&ndash;&gt;
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>-->
+
+    <!--定义别名-->
+    <!--<typeAliases>
+        <package name="com.pinyougou.pojo"/>
+    </typeAliases>-->
+
+    <!--设置sql mapper映射文件的位置-->
+    <!--<mappers>
+        <package name="xxxxxxxxxx"/>
+    </mappers>-->
+    <settings>
+        <!--开启驼峰规则自动映射字段属性值：如字段为user_name的可以映射待userName属性中-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+</configuration>
